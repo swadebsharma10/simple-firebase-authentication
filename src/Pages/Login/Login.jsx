@@ -16,7 +16,7 @@ const Login = () => {
         .then(result => {
             const loggedInUser = result.user;
             setUser(loggedInUser);
-            console.log(loggedInUser)
+            console.log('google user', loggedInUser)
         })
         .catch(error => {
             console.log('error', error.message)
@@ -27,7 +27,7 @@ const Login = () => {
         signOut(auth)
         .then((result)=>{
             console.log(result)
-            setUser('');
+            setUser(null);
         })
         .catch(error =>{
             console.log(error.message)

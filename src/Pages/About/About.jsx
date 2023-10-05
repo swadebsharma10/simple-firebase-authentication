@@ -24,7 +24,7 @@ const About = () => {
         signOut(auth)
         .then((result)=>{
             console.log(result)
-            setUser('');
+            setUser(null);
         })
         .catch(error =>{
             console.log(error.message)

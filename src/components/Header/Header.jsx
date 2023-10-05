@@ -11,7 +11,7 @@ const Header = () => {
     </li>
     <li> 
      <NavLink to="/about" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "underline text-blue-600" : ""}
-     > About</NavLink>
+     > Github</NavLink>
     </li>
     <li> 
      <NavLink to="/login" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "underline text-blue-600" : ""}
